@@ -1,0 +1,8 @@
+# Required for legacy (V2) compatibility
+meta.id: Silverig.MinecraftAdv
+meta.hidden: false
+
+meta.name: Minecraft (Advanced)
+meta.author: Silverig
+meta.description: Advanced Minecraft remote
+meta.tags.category: gaming

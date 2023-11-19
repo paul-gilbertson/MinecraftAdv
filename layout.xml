@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<tabs>
+<tab text="Move">
+    <row weight="6">
+		<touch id="touch"
+			ondown="down"
+			onup="up"
+			ontap="tap" 
+			ondoubletap="double" 
+			ontouchdelta="delta"
+			color="transparent"
+			text="Touch!" />
+	  </row>
+	  <row weight="wrap">
+	  <button text="T" ondown="twerk_start" onup="twerk_stop" weight="2" color="purple" />
+		<button text="L" ondown="clickstart" onup="clickend" weight="5" />
+		<button text="R" ondown="rclickstart" onup="rclickend" weight="5" />
+		<button text="C" ontap="crouchtoggle" weight="2" color="green" id="crouchbtn"/>
+	  </row>
+
+	  <row weight="1">
+		<button text="Back" ontap="menu" color="black" />
+		<button text="Inventory" ontap="inventory" color="blue" />
+		<button text ="Quests" ontap="quests" color="blue" />
+	  </row>
+
+	  <row weight="1">
+        <button text="《" ontap="tbdown" color="purple" />
+		<button text="》" ontap="tbup" color="purple" />
+		<button text="Mine" ondown="minedown" onup="mineup" color="yellow" />
+	  </row>
+	  <row weight="1">
+		<button text="Run" ondown="rundown" onup="runup" color="orange" />
+	  </row>
+	  <row weight="1">
+		<button text="Left" ondown="leftdown" onup="leftup" color="orange" />
+		<button text="Reverse" ondown="reversedown" onup="reverseup" color="orange" />
+		<button text="Right" ondown="rightdown" onup="rightup" color="orange" />
+
+	  </row>
+</tab>
+<tab text="Inventory">
+    <row weight="6">
+		<touch id="touch"
+			ondown="down"
+			onup="up"
+			onhold="hold"
+			ontap="tap" 
+			ondoubletap="double" 
+			ontouchdelta="delta"
+			color="transparent"
+			text="Touch!" />
+	  </row>
+	  <row weight="1">
+		<button text="Menu" ontap="menu" color="blue" />
+		<button text="Inventory" ontap="inventory" color="blue" />
+		<button text ="Quests" ontap="quests" color="green" />
+	  </row>
+	  <row weight="1">
+		<button text="Inventory" ontap="inventory" color="blue" />
+	  </row>
+
+	  <row weight="wrap">
+		<button text="L" ontap="left" />
+		<button text="R" ontap="right" />
+	  </row>
+</tab>
+</tabs>
+</layout>
