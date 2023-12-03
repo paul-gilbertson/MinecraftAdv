@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-<tabs>
-<tab text="Move">
     <row weight="6">
 		<touch id="touch"
 			ondown="down"
@@ -20,51 +18,22 @@
 	  </row>
 
 	  <row weight="1">
-		<button text="Back" ontap="menu" color="black" />
-		<button text="Inventory" ontap="inventory" color="blue" />
-		<button text ="Quests" ontap="quests" color="blue" />
+		<button icon="rwd" ontap="menu" color="black" />
+		<button image="Backpack.png" scale="fit" ontap="inventory" color="blue" />
+		<button image="Book.png" scale="fit" ontap="quests" color="blue" />
 	  </row>
 
 	  <row weight="1">
-        <button text="《" ontap="tbdown" color="purple" />
-		<button text="》" ontap="tbup" color="purple" />
-		<button text="Mine" ondown="minedown" onup="mineup" color="yellow" />
+        <button icon="docleft" ontap="tbdown" color="purple" />
+		<button icon="docright" ontap="tbup" color="purple" />
+		<button image="Stone_Pickaxe.png" scale="fit" ondown="minedown" onup="mineup" color="yellow" />
 	  </row>
 	  <row weight="1">
-		<button text="Run" ondown="rundown" onup="runup" color="orange" />
+		<button icon="arrowup" ondown="rundown" onup="runup" color="orange" />
 	  </row>
 	  <row weight="1">
-		<button text="Left" ondown="leftdown" onup="leftup" color="orange" />
-		<button text="Reverse" ondown="reversedown" onup="reverseup" color="orange" />
-		<button text="Right" ondown="rightdown" onup="rightup" color="orange" />
-
+		<button icon="arrowleft" ondown="leftdown" onup="leftup" color="orange" />
+		<button icon="arrowdown" ondown="reversedown" onup="reverseup" color="orange" />
+		<button icon="arrowright" ondown="rightdown" onup="rightup" color="orange" />
 	  </row>
-</tab>
-<tab text="Inventory">
-    <row weight="6">
-		<touch id="touch"
-			ondown="down"
-			onup="up"
-			onhold="hold"
-			ontap="tap" 
-			ondoubletap="double" 
-			ontouchdelta="delta"
-			color="transparent"
-			text="Touch!" />
-	  </row>
-	  <row weight="1">
-		<button text="Menu" ontap="menu" color="blue" />
-		<button text="Inventory" ontap="inventory" color="blue" />
-		<button text ="Quests" ontap="quests" color="green" />
-	  </row>
-	  <row weight="1">
-		<button text="Inventory" ontap="inventory" color="blue" />
-	  </row>
-
-	  <row weight="wrap">
-		<button text="L" ontap="left" />
-		<button text="R" ontap="right" />
-	  </row>
-</tab>
-</tabs>
 </layout>
